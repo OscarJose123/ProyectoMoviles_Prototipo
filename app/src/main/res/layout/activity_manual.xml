@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.oscarjosmoreira.prototipoaplicacion.Manual"
+    android:background="@android:color/holo_orange_light">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ALTO"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        android:id="@+id/button"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="47dp"
+        android:src="@drawable/PROHIBIDA"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignStart="@+id/imageView6"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/PROHIBIDO1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        android:id="@+id/button3"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView8"
+        android:layout_above="@+id/button3"
+        android:layout_alignStart="@+id/button2"
+        android:src="@drawable/PROHIBIDO2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        android:id="@+id/button4"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignStart="@+id/imageView8"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView9"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/SENTIDO"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView10"
+        android:layout_below="@+id/button4"
+        android:layout_alignEnd="@+id/imageView8"
+        android:src="@drawable/VELOCIDAD1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        android:id="@+id/button5"
+        android:layout_below="@+id/imageView9"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        android:id="@+id/button6"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignStart="@+id/imageView10"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:id="@+id/button7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/button6"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

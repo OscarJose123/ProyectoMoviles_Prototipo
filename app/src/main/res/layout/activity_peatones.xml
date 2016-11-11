@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_peatones"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.oscarjosmoreira.prototipoaplicacion.peatones"
+    android:background="@android:color/holo_orange_light">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/peaton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView30" />
+
+    <TextView
+        android:text="esta señal advierte al conductor de un cruce peatonal, salvo cuando hay semáforos siempre el peatón tendrá la preferencia. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/textView11"
+        android:textColor="@android:color/black"/>
+</RelativeLayout>
