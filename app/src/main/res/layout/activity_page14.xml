@@ -8,6 +8,48 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.oscarjosmoreira.prototipoaplicacion.Page14">
+    tools:context="com.example.oscarjosmoreira.prototipoaplicacion.Page14"
+    android:background="@android:color/holo_green_light">
 
+    <TextView
+        android:text="¿Que Mensaje le daria a la población?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:id="@+id/textView59"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@android:color/background_dark" />
+
+    <AutoCompleteTextView
+        android:text="Respuesta"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView59"
+        android:layout_marginTop="50dp"
+        android:id="@+id/autoCompleteTextView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="280dp" />
+
+    <Button
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:id="@+id/button43"
+        android:layout_below="@+id/autoCompleteTextView2"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:text="Siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button43"
+        android:layout_alignEnd="@+id/textView59"
+        android:id="@+id/button44"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white" />
 </RelativeLayout>

@@ -8,6 +8,97 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.oscarjosmoreira.prototipoaplicacion.Page8">
+    tools:context="com.example.oscarjosmoreira.prototipoaplicacion.Page8"
+    android:background="@android:color/holo_green_light">
 
+    <TextView
+        android:text="Si para adelantar debe invadir un carril exclusivo para colectivos y taxis ¿le está permitido realizar la maniobra? "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView18"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@android:color/black"/>
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox22"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:id="@+id/checkBox24" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:id="@+id/checkBox21"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentStart="true" />
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox22"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:text="  No, porque está prohibido utilizar dicho carril."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_below="@+id/checkBox21"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:text=" Sí, cuando la línea longitudinal del lado exterior de este carril sea discontinua."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView23"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_below="@+id/checkBox22"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:text="Sí, porque sólo se permite su utilización para realizar alguna maniobra."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView40"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_below="@+id/checkBox24"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/button31"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button31"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="65dp"
+        android:id="@+id/button32"
+        android:text="Siguiente"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark" />
+    />
 </RelativeLayout>

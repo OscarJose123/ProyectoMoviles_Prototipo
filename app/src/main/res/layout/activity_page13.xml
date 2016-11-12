@@ -8,6 +8,93 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.oscarjosmoreira.prototipoaplicacion.Page13">
+    tools:context="com.example.oscarjosmoreira.prototipoaplicacion.Page13"
+    android:background="@android:color/holo_green_light">
 
+    <TextView
+        android:text="Provocar accidentes y darse a la fuga es una falta:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:id="@+id/textView55"
+        android:textColor="@android:color/background_dark" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView55"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/checkBox36" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox36"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:id="@+id/checkBox37" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox37"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp"
+        android:id="@+id/checkBox38" />
+
+    <TextView
+        android:text="Leve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox37"
+        android:layout_toEndOf="@+id/checkBox36"
+        android:layout_marginStart="64dp"
+        android:id="@+id/textView56"
+        android:textColor="@android:color/background_dark"/>
+
+    <TextView
+        android:text="Peligrosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox38"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView57"
+        android:textColor="@android:color/background_dark"/>
+
+    <TextView
+        android:text="Muy peligrosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBox38"
+        android:layout_alignEnd="@+id/textView57"
+        android:id="@+id/textView58"
+        android:textColor="@android:color/background_dark"/>
+
+    <Button
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:id="@+id/button41"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView58"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark" />
+
+    <Button
+        android:text="Siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button42"
+        android:layout_alignBaseline="@+id/button41"
+        android:layout_alignBottom="@+id/button41"
+        android:layout_toEndOf="@+id/textView56"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark" />
 </RelativeLayout>

@@ -8,6 +8,92 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.oscarjosmoreira.prototipoaplicacion.Page10">
+    tools:context="com.example.oscarjosmoreira.prototipoaplicacion.Page10"
+    android:background="@android:color/holo_green_light">
 
+    <TextView
+        android:text="¿Cuanto tiempo tendra el conductor para pagar la boleta dada por la policia?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView44"
+        android:textColor="@android:color/background_dark" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView44"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="66dp"
+        android:id="@+id/checkBox27" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/checkBox27"
+        android:id="@+id/checkBox28" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox28"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="62dp"
+        android:id="@+id/checkBox29" />
+
+    <TextView
+        android:text="15 diias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBox27"
+        android:layout_toEndOf="@+id/checkBox27"
+        android:layout_marginStart="79dp"
+        android:id="@+id/textView46"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="30 dias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/textView46"
+        android:id="@+id/textView47"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="2 meses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBox29"
+        android:layout_alignStart="@+id/textView47"
+        android:id="@+id/textView48"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:text="Nuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox29"
+        android:layout_toStartOf="@+id/textView48"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="37dp"
+        android:id="@+id/button35"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:text="Siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button35"
+        android:layout_toEndOf="@+id/button35"
+        android:id="@+id/button36"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white" />
 </RelativeLayout>
