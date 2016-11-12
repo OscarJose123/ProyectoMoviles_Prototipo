@@ -20,6 +20,7 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/alto"
         tools:text="Es una señal de tráfico reglamentaria que indica en las intersecciones la obligación de detenerse antes de continuar la marcha.  Su propósito es ordenar al conductor que detenga completamente su vehículo y sólo avanzar cuando elimine totalmente la posibilidad de accidente. El hecho de no respetarla puede probocar un gravísimo acidente."
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
         android:textColor="@android:color/black"/>
 
     <ImageView

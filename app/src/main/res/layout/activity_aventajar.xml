@@ -19,6 +19,7 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/textView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
         android:textColor="@android:color/black"/>
 
     <ImageView

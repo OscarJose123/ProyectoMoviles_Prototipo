@@ -28,5 +28,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
         android:id="@+id/textView9"
-        android:text="Se usa para indicar al conductor que no puede virar en 180 grados aproximadamente. Al hacerlo interrumpe la circulación de otros vehículos y constituye un factor de riesgo." />
+        android:text="Se usa para indicar al conductor que no puede virar en 180 grados aproximadamente. Al hacerlo interrumpe la circulación de otros vehículos y constituye un factor de riesgo."
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 </RelativeLayout>

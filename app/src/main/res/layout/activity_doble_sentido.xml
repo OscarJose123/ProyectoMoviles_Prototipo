@@ -12,16 +12,6 @@
     tools:context="com.example.oscarjosmoreira.prototipoaplicacion.dobleSentido"
     android:background="@android:color/holo_orange_light">
 
-    <TextView
-        android:text="Es utilizada para indicar a los conductores de vehículos que están circulando por una vía de un sentido que a partir de esta señal, la vía se transforma en una arteria de dos sentidos de tránsito."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="190dp"
-        android:id="@+id/textView2"
-        android:textColor="@android:color/black"/>
-
     <ImageView
         app:srcCompat="@drawable/SENTIDO"
         android:layout_alignParentTop="true"
@@ -29,4 +19,15 @@
         android:id="@+id/imageView21"
         android:layout_height="212dp"
         android:layout_width="355dp" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:text="Es utilizada para indicar a los conductores de vehículos que están circulando por una vía de un sentido que a partir de esta señal, la vía se transforma en una arteria de dos sentidos de tránsito."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/imageView21"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 </RelativeLayout>

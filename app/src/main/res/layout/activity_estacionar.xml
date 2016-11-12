@@ -22,6 +22,7 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
+        android:textColor="@android:color/black"
         android:text=" Se usa para indicar la prohibición de estacionar a partir de donde se encuentra la señal, ya que al hacerlo puede interrumpir la circulación de los demás vehículos."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,5 +30,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:id="@+id/textView4"
-        android:textColor="@android:color/black"/>
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 </RelativeLayout>
