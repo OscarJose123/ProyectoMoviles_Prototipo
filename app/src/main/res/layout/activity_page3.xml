@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_page3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.oscarjosmoreira.prototipoaplicacion.Page3"
+    android:background="@android:color/holo_green_light">
+
+    <TextView
+        android:text="En algun caso de presentar sintomas de alcoholismo en su organizmo, ¿de cuanto seria la multa a aplicar si se llevara a cabo dicha accion?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/textView24"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:text="C$ 900"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="61dp"
+        android:id="@+id/textView28"
+        android:textColor="@android:color/black"/>
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox7"
+        android:layout_below="@+id/textView24"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp" />
+
+    <TextView
+        android:text="C$1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/textView28"
+        android:id="@+id/textView30"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:text="C$1500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox9"
+        android:layout_alignStart="@+id/textView30"
+        android:id="@+id/textView31"
+        android:textColor="@android:color/black"/>
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:id="@+id/checkBox9"
+        android:layout_below="@+id/checkBox8"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox8"
+        android:layout_alignBaseline="@+id/textView30"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button18"
+        android:layout_alignBaseline="@+id/button17"
+        android:layout_alignBottom="@+id/button17"
+        android:layout_alignEnd="@+id/textView31"
+        android:layout_marginEnd="19dp"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:id="@+id/button17"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/button18"
+        android:layout_marginEnd="30dp"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
