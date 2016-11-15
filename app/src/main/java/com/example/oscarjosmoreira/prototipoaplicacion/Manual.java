@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class Manual extends AppCompatActivity implements View.OnClickListener {
+public class Manual extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,11 +15,5 @@ public class Manual extends AppCompatActivity implements View.OnClickListener {
     }
 
 
-    Button button = (Button) findViewById(R.id.button);
 
-
-    @Override
-    public void onClick(View v) {
-
-    }
 }
