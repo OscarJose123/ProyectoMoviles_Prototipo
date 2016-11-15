@@ -16,7 +16,7 @@
         android:id="@+id/imageView11"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/VELOCIDAD2"/>
+        android:src="@drawable/velocidad2"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
         android:id="@+id/button8"
         android:layout_below="@+id/imageView11"
         android:layout_alignParentStart="true"
-        android:src="@drawable/ZONA"
+        android:src="@drawable/zona"
         android:background="@android:color/holo_green_light"
         android:textColor="@android:color/white"/>
 

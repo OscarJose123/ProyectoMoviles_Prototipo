@@ -69,7 +69,7 @@
     <ImageView
         android:layout_width="90dp"
         android:layout_height="100dp"
-        app:srcCompat="@drawable/ALTO"
+        app:srcCompat="@drawable/alto"
         android:id="@+id/imageView42"
         android:layout_below="@+id/imageView41"
         android:layout_alignStart="@+id/imageView41" />

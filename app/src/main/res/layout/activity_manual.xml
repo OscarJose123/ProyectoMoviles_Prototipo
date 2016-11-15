@@ -16,7 +16,7 @@
         android:id="@+id/imageView5"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/ALTO"/>
+        android:src="@drawable/alto"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="47dp"
-        android:src="@drawable/PROHIBIDA"/>
+        android:src="@drawable/prohibida"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
         android:id="@+id/imageView7"
         android:layout_below="@+id/button"
         android:layout_alignParentStart="true"
-        android:src="@drawable/PROHIBIDO1"/>
+        android:src="@drawable/prohibido1"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
         android:id="@+id/imageView8"
         android:layout_above="@+id/button3"
         android:layout_alignStart="@+id/button2"
-        android:src="@drawable/PROHIBIDO2"/>
+        android:src="@drawable/prohibido2"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -89,7 +89,7 @@
         android:id="@+id/imageView9"
         android:layout_below="@+id/button3"
         android:layout_alignParentStart="true"
-        android:src="@drawable/SENTIDO"/>
+        android:src="@drawable/sentido"/>
 
     <ImageView
         android:layout_width="100dp"
@@ -97,7 +97,7 @@
         android:id="@+id/imageView10"
         android:layout_below="@+id/button4"
         android:layout_alignEnd="@+id/imageView8"
-        android:src="@drawable/VELOCIDAD1"/>
+        android:src="@drawable/velocidad1"/>
 
     <Button
         android:layout_width="wrap_content"

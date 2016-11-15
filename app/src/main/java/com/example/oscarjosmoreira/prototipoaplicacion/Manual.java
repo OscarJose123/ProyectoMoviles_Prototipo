@@ -2,9 +2,11 @@ package com.example.oscarjosmoreira.prototipoaplicacion;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
-public class Manual extends AppCompatActivity {
+public class Manual extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,11 +15,11 @@ public class Manual extends AppCompatActivity {
     }
 
 
-    ImageView imageView5 = (ImageView) findViewById(R.id.imageView5);
-    ImageView imageView6 = (ImageView) findViewById(R.id.imageView6);
-    ImageView imageView7 =(ImageView) findViewById(R.id.imageView7);
-    ImageView imageView8 = (ImageView) findViewById(R.id.imageView8);
-    ImageView imageView9 = (ImageView) findViewById(R.id.imageView9);
-    ImageView imageView10 =(ImageView) findViewById(R.id.imageView10);
+    Button button = (Button) findViewById(R.id.button);
+    button.setOnClickListener(this);
 
+    @Override
+    public void onClick(View v) {
+
+    }
 }

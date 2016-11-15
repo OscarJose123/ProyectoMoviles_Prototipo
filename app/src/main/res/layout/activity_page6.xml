@@ -52,7 +52,7 @@
     <ImageView
         android:layout_width="80dp"
         android:layout_height="100dp"
-        app:srcCompat="@drawable/ZONA"
+        app:srcCompat="@drawable/proximidad_de_semaforo"
         android:id="@+id/imageView36"
         android:layout_below="@+id/imageView35"
         android:layout_alignStart="@+id/imageView35"
@@ -70,7 +70,7 @@
     <ImageView
         android:layout_width="80dp"
         android:layout_height="100dp"
-        app:srcCompat="@drawable/PROHIBIDO2"
+        app:srcCompat="@drawable/prohibido_estacionar_y_detenerse"
         android:id="@+id/imageView37"
         android:layout_marginTop="24dp"
         android:layout_below="@+id/imageView36"
