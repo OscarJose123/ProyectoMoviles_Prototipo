@@ -16,7 +16,7 @@ public class Manual extends AppCompatActivity implements View.OnClickListener {
 
 
     Button button = (Button) findViewById(R.id.button);
-    button.setOnClickListener(this);
+
 
     @Override
     public void onClick(View v) {
