@@ -14,31 +14,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton3);
-    ImageButton imageButton1 = (ImageButton) findViewById(R.id.imageButton);
-    ImageButton imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
+    ImageView imageView = (ImageView) findViewById(R.id.imageView2);
+    ImageView imageView2 = (ImageView) findViewById(R.id.imageView3);
+    ImageView imageView3 = (ImageView) findViewById(R.id.imageView4);
 
-    imageButton.setOnClickListener(this);
-    imageButton1.setOnClickListener(this);
-    imageButton2.setOnClickListener(this);
+    imageView.setOnClickListener(this);
+    imageView2.setOnClickListener(this);
+    imageView3.setOnClickListener(this);
 
     }
     public void OnClick (View v){
 
-        if(v.getId() == R.id.imageButton3){
+        if(v.getId() == R.id.imageView2){
             Intent intent = new Intent(this, Manual.class);
             startActivity(intent);
         }
     }
 
     public void onClick2 (View v2){
-        if(v2.getId() == R.id.imageButton){
+        if(v2.getId() == R.id.imageView3){
             Intent intent2 = new Intent(this, Juego.class);
             startActivity(intent2);
         }
     }
     public void onClick3 (View v3){
-        if(v3.getId() == R.id.imageButton2){
+        if(v3.getId() == R.id.imageView4){
             Intent intent3 = new Intent(this, Page1.class);
             startActivity(intent3);
         }
