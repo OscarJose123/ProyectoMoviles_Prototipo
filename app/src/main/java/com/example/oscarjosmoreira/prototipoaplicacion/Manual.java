@@ -14,7 +14,20 @@ public class Manual extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manual);
 
+        Button button = (Button) findViewById(R.id.button);
+        Button button2 = (Button) findViewById(R.id.button2);
+        Button button3 = (Button) findViewById(R.id.button3);
+        Button button4 = (Button) findViewById(R.id.button4);
+        Button button5 = (Button) findViewById(R.id.button5);
+        Button button6 = (Button) findViewById(R.id.button6);
         Button button7 = (Button) findViewById(R.id.button7);
+
+        button6.setOnClickListener((View.OnClickListener) this);
+        button5.setOnClickListener((View.OnClickListener) this);
+        button4.setOnClickListener((View.OnClickListener) this);
+        button3.setOnClickListener((View.OnClickListener) this);
+        button2.setOnClickListener((View.OnClickListener) this);
+        button.setOnClickListener((View.OnClickListener) this);
         button7.setOnClickListener((View.OnClickListener) this);
 
     }
@@ -24,6 +37,44 @@ public class Manual extends AppCompatActivity {
             startActivity(intent7);
         }
     }
+
+    public void onClick1(View  v){
+        if (v.getId() == R.id.button) {
+            Intent intent = new Intent(this, Alto.class);
+            startActivity(intent);
+        }
+    }
+    public void onClick2(View  v){
+        if (v.getId() == R.id.button2) {
+            Intent intent2 = new Intent(this, aventajar.class);
+            startActivity(intent2);
+        }
+    }
+    public void onClick3(View  v){
+        if (v.getId() == R.id.button3) {
+            Intent intent3 = new Intent(this, circulacion.class);
+            startActivity(intent3);
+        }
+    }
+    public void onClick4(View v){
+        if (v.getId() == R.id.button4){
+            Intent intent4 = new Intent(this, estacionar.class);
+            startActivity(intent4);
+        }
+    }
+    public void onClick5(View  v){
+        if (v.getId() == R.id.button5) {
+            Intent intent5 = new Intent(this, Manual2.class);
+            startActivity(intent5);
+        }
+    }
+    public void onClick6(View  v){
+        if (v.getId() == R.id.button6) {
+            Intent intent6 = new Intent(this, Manual2.class);
+            startActivity(intent6);
+        }
+    }
+
 
 
 
