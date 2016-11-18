@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView2 = (ImageView) findViewById(R.id.imageView3);
     ImageView imageView3 = (ImageView) findViewById(R.id.imageView4);
 
-    imageView.setOnClickListener(this);
-    imageView2.setOnClickListener(this);
-    imageView3.setOnClickListener(this);
+    imageView.setOnClickListener((View.OnClickListener) this);
+    imageView2.setOnClickListener((View.OnClickListener) this);
+    imageView3.setOnClickListener((View.OnClickListener) this);
 
     }
     public void OnClick (View v){
