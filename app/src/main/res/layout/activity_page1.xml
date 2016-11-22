@@ -40,7 +40,8 @@
         android:background="@android:color/holo_red_dark"
         android:textColor="@android:color/white"
         android:layout_marginBottom="41dp"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/radioButton3" />
 
     <RadioButton
         android:layout_width="wrap_content"
@@ -50,7 +51,8 @@
         android:checked="true"
         android:layout_above="@+id/radioButton2"
         android:layout_alignStart="@+id/radioButton2"
-        android:layout_marginBottom="63dp" />
+        android:layout_marginBottom="63dp"
+        android:textColor="@android:color/black" />
 
     <RadioButton
         android:layout_width="wrap_content"
@@ -59,7 +61,8 @@
         android:id="@+id/radioButton2"
         android:layout_centerVertical="true"
         android:layout_alignStart="@+id/radioButton3"
-        android:checked="true" />
+        android:checked="true"
+        android:textColor="@android:color/black" />
 
     <RadioButton
         android:layout_width="wrap_content"
@@ -69,5 +72,6 @@
         android:layout_above="@+id/button20"
         android:layout_toStartOf="@+id/button20"
         android:layout_marginBottom="77dp"
-        android:checked="true" />
+        android:checked="true"
+        android:textColor="@android:color/black" />
 </RelativeLayout>

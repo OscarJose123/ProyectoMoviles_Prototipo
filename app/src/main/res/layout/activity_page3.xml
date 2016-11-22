@@ -21,82 +21,52 @@
         android:id="@+id/textView24"
         android:textColor="@android:color/black"/>
 
-    <TextView
-        android:text="C$ 900"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/checkBox7"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="61dp"
-        android:id="@+id/textView28"
-        android:textColor="@android:color/black"/>
-
-    <CheckBox
-        android:text="CheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkBox7"
-        android:layout_below="@+id/textView24"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="63dp" />
-
-    <TextView
-        android:text="C$1000"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/textView28"
-        android:id="@+id/textView30"
-        android:textColor="@android:color/black"/>
-
-    <TextView
-        android:text="C$1500"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/checkBox9"
-        android:layout_alignStart="@+id/textView30"
-        android:id="@+id/textView31"
-        android:textColor="@android:color/black"/>
-
-    <CheckBox
-        android:text="CheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:id="@+id/checkBox9"
-        android:layout_below="@+id/checkBox8"
-        android:layout_alignParentStart="true" />
-
-    <CheckBox
-        android:text="CheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkBox8"
-        android:layout_alignBaseline="@+id/textView30"
-        android:layout_alignBottom="@+id/textView30"
-        android:layout_alignParentStart="true" />
-
     <Button
         android:text="Siguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button18"
-        android:layout_alignBaseline="@+id/button17"
-        android:layout_alignBottom="@+id/button17"
-        android:layout_alignEnd="@+id/textView31"
-        android:layout_marginEnd="19dp"
+        android:layout_marginEnd="93dp"
         android:background="@android:color/holo_red_dark"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:layout_alignTop="@+id/button17"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:text="Menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="47dp"
+        android:layout_marginBottom="43dp"
         android:id="@+id/button17"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/button18"
-        android:layout_marginEnd="30dp"
         android:background="@android:color/holo_red_dark"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/radioButton9" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C$1000"
+        android:id="@+id/radioButton7"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C$1500"
+        android:id="@+id/radioButton8"
+        android:layout_below="@+id/radioButton7"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C$900"
+        android:id="@+id/radioButton9"
+        android:layout_above="@+id/radioButton7"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black" />
 </RelativeLayout>
