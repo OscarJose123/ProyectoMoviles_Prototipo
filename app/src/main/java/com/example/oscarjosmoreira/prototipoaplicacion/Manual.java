@@ -33,20 +33,20 @@ public class Manual extends AppCompatActivity {
     }
     public void onClick(View  v){
         if (v.getId() == R.id.button7) {
-            Intent intent7 = new Intent(this, Manual2.class);
+            Intent intent7 = new Intent(Manual.this, Manual2.class);
             startActivity(intent7);
         }
     }
 
     public void onClick1(View  v){
         if (v.getId() == R.id.button) {
-            Intent intent = new Intent(this, Alto.class);
+            Intent intent = new Intent(Manual.this, Alto.class);
             startActivity(intent);
         }
     }
     public void onClick2(View  v){
         if (v.getId() == R.id.button2) {
-            Intent intent2 = new Intent(this, aventajar.class);
+            Intent intent2 = new Intent(Manual.this, aventajar.class);
             startActivity(intent2);
         }
     }
@@ -58,19 +58,19 @@ public class Manual extends AppCompatActivity {
     }
     public void onClick4(View v){
         if (v.getId() == R.id.button4){
-            Intent intent4 = new Intent(this, estacionar.class);
+            Intent intent4 = new Intent(Manual.this, estacionar.class);
             startActivity(intent4);
         }
     }
     public void onClick5(View  v){
         if (v.getId() == R.id.button5) {
-            Intent intent5 = new Intent(this, Manual2.class);
+            Intent intent5 = new Intent(Manual.this, dobleSentido.class);
             startActivity(intent5);
         }
     }
     public void onClick6(View  v){
         if (v.getId() == R.id.button6) {
-            Intent intent6 = new Intent(this, Manual2.class);
+            Intent intent6 = new Intent(Manual.this, vmaxima.class);
             startActivity(intent6);
         }
     }

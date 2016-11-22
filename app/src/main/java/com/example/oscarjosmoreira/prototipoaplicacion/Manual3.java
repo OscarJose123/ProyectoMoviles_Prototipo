@@ -25,14 +25,14 @@ public class Manual3 extends AppCompatActivity {
 
     public void onClick6 (View v){
         if (v.getId() == R.id.button15){
-            Intent intent9 = new Intent(this, peatones.class);
+            Intent intent9 = new Intent(Manual3.this, peatones.class);
             startActivity(intent9);
         }
     }
 
     public void onClick10 (View v){
         if (v.getId() == R.id.button16){
-            Intent intent10 = new Intent(this, pcostado.class);
+            Intent intent10 = new Intent(Manual3.this, pcostado.class);
             startActivity(intent10);
         }
 

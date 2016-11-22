@@ -26,20 +26,20 @@ public class MainActivity extends AppCompatActivity {
     public void OnClick (View v){
 
         if(v.getId() == R.id.imageView2){
-            Intent intent = new Intent(this, Manual.class);
+            Intent intent = new Intent(MainActivity.this, Manual.class);
             startActivity(intent);
         }
     }
 
     public void onClick2 (View v2){
         if(v2.getId() == R.id.imageView3){
-            Intent intent2 = new Intent(this, Juego.class);
+            Intent intent2 = new Intent(MainActivity.this, Juego.class);
             startActivity(intent2);
         }
     }
     public void onClick3 (View v3){
         if(v3.getId() == R.id.imageView4){
-            Intent intent3 = new Intent(this, Page1.class);
+            Intent intent3 = new Intent(MainActivity.this, Page1.class);
             startActivity(intent3);
         }
 

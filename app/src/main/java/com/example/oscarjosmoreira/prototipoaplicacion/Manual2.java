@@ -34,14 +34,14 @@ public class Manual2 extends AppCompatActivity {
 
     public void onClick0(View  v){
         if (v.getId() == R.id.button10) {
-            Intent intent1 = new Intent(this, curvaderecha.class);
+            Intent intent1 = new Intent(Manual2.this, curvaderecha.class);
             startActivity(intent1);
         }
     }
 
     public void onClick1(View  v){
         if (v.getId() == R.id.button9) {
-            Intent intent2 = new Intent(this, cedaelpaso.class);
+            Intent intent2 = new Intent(Manual2.this, cedaelpaso.class);
             startActivity(intent2);
         }
     }
@@ -49,33 +49,33 @@ public class Manual2 extends AppCompatActivity {
 
     public void onClick(View  v){
         if (v.getId() == R.id.button8) {
-            Intent intent4 = new Intent(this, vminimo.class);
+            Intent intent4 = new Intent(Manual2.this, vminimo.class);
             startActivity(intent4);
         }
     }
 
     public void onClick2(View  v){
         if (v.getId() == R.id.button11) {
-            Intent intent5 = new Intent(this, noGirar.class);
+            Intent intent5 = new Intent(Manual2.this, noGirar.class);
             startActivity(intent5);
         }
     }
     public void onClick3(View  v){
         if (v.getId() == R.id.button12) {
-            Intent intent6 = new Intent(this, cedaelpaso.class);
+            Intent intent6 = new Intent(Manual2.this, cedaelpaso.class);
             startActivity(intent6);
         }
     }
     public void onClick4(View  v){
         if (v.getId() == R.id.button13) {
-            Intent intent7 = new Intent(this, pavimento.class);
+            Intent intent7 = new Intent(Manual2.this, pavimento.class);
             startActivity(intent7);
         }
     }
 
     public void onClick5(View v){
         if (v.getId() == R.id.button14){
-            Intent intent8 = new Intent(this, Manual3.class);
+            Intent intent8 = new Intent(Manual2.this, Manual3.class);
             startActivity(intent8);
         }
     }
