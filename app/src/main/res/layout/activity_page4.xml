@@ -11,71 +11,17 @@
     tools:context="com.example.oscarjosmoreira.prototipoaplicacion.Page4"
     android:background="@android:color/holo_green_light">
 
-    <CheckBox
-        android:text="CheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox11"
-        android:layout_alignEnd="@+id/checkBox11"
-        android:layout_marginTop="43dp"
-        android:id="@+id/checkBox12" />
-
-    <TextView
-        android:text=" Del peatón, por no tomar la precaución al llegar a una salida de vehículos."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView27"
-        android:layout_below="@+id/checkBox10"
-        android:layout_alignParentStart="true"
-        android:textColor="@android:color/black" />
-
-    <CheckBox
-        android:text="CheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkBox11"
-        android:layout_below="@+id/textView27"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="14dp" />
-
-    <TextView
-        android:text=" Del conductor del otro vehículo, por no tener cuidado."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView29"
-        android:layout_below="@+id/checkBox11"
-        android:layout_alignParentStart="true"
-        android:textColor="@android:color/black" />
-
-    <TextView
-        android:text="Del conductor del vehículo que sale a la vía pública."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView32"
-        android:layout_below="@+id/checkBox12"
-        android:layout_alignEnd="@+id/textView29"
-        android:textColor="@android:color/background_dark" />
-
-    <CheckBox
-        android:text="CheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:id="@+id/checkBox10"
-        android:layout_below="@+id/textView25"
-        android:layout_alignParentStart="true" />
-
     <Button
         android:text="Siguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="71dp"
         android:id="@+id/button24"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
         android:layout_alignBaseline="@+id/button23"
         android:layout_alignBottom="@+id/button23"
-        android:layout_alignEnd="@+id/textView32"
-        android:background="@android:color/holo_red_dark"
-        android:textColor="@android:color/white" />
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -91,12 +37,42 @@
         android:text="Menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
         android:id="@+id/button23"
-        android:layout_marginBottom="75dp"
         android:background="@android:color/holo_red_dark"
         android:textColor="@android:color/white"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView32" />
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/radioButton12"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="59dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Del peatón, por no tomar la precaución al llegar a una salida de vehículos."
+        android:id="@+id/radioButton10"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp"
+        android:textColor="@android:color/black" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Del conductor del otro vehículo, por no tener cuidado."
+        android:id="@+id/radioButton11"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/radioButton10"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="67dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Del conductor del vehículo que sale a la vía pública."
+        android:id="@+id/radioButton12"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/radioButton11"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="55dp" />
 
 </RelativeLayout>

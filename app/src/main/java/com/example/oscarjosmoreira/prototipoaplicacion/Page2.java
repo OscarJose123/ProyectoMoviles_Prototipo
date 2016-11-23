@@ -18,12 +18,12 @@ public class Page2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page2);
 
-        r1 = (RadioButton) findViewById(R.id.radioButton);
-        r2 = (RadioButton) findViewById(R.id.radioButton2);
-        r3 = (RadioButton) findViewById(R.id.radioButton3);
+        r1 = (RadioButton) findViewById(R.id.radioButton4);
+        r2 = (RadioButton) findViewById(R.id.radioButton5);
+        r3 = (RadioButton) findViewById(R.id.radioButton6);
 
-        menu = (Button) findViewById(R.id.button19);
-        siguiente = (Button) findViewById(R.id.button20);
+        menu = (Button) findViewById(R.id.button21);
+        siguiente = (Button) findViewById(R.id.button22);
 
         menu.setOnClickListener((View.OnClickListener) this);
         siguiente.setOnClickListener((View.OnClickListener) this);
@@ -48,13 +48,13 @@ public class Page2 extends AppCompatActivity {
 
 
     public void onClick2(View v){
-        if(v.getId() == R.id.button19){
+        if(v.getId() == R.id.button21){
             Intent intent = new Intent(Page2.this, MainActivity.class);
             startActivity(intent);
         }
     }
     public void onClick3(View v){
-        if (v.getId() == R.id.button20){
+        if (v.getId() == R.id.button22){
             Intent intent2 = new Intent(Page2.this, Page3.class);
             startActivity(intent2);
         }
