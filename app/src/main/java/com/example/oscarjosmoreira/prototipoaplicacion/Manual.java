@@ -22,10 +22,35 @@ public class Manual extends AppCompatActivity {
         Button button6 = (Button) findViewById(R.id.button6);
         Button button7 = (Button) findViewById(R.id.button7);
 
-        button6.setOnClickListener((View.OnClickListener) this);
-        button5.setOnClickListener((View.OnClickListener) this);
-        button4.setOnClickListener((View.OnClickListener) this);
-        button3.setOnClickListener((View.OnClickListener) this);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual.this, vmaxima.class);
+                startActivity(intent);
+            }
+        });
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual.this, dobleSentido.class);
+                startActivity(intent);
+            }
+        });
+        button4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual.this, estacionar.class);
+                startActivity(intent);
+            }
+        });
+        button3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual.this, circulacion.class);
+                startActivity(intent);
+            }
+        });
         button2.setOnClickListener((View.OnClickListener) this);
         button.setOnClickListener((View.OnClickListener) this);
         button7.setOnClickListener((View.OnClickListener) this);

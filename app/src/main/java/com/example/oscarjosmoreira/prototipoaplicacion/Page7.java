@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class Page7 extends AppCompatActivity {
 
-
+Page1 pr = new Page1();
     private Button menu, siguiente;
     private RadioButton r1, r2, r3;
 
@@ -27,39 +27,31 @@ public class Page7 extends AppCompatActivity {
         menu = (Button) findViewById(R.id.button29);
         siguiente = (Button) findViewById(R.id.button30);
 
-        menu.setOnClickListener((View.OnClickListener) this);
-        siguiente.setOnClickListener((View.OnClickListener) this);
+        menu.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(Page7.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        siguiente.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent2 = new Intent(Page7.this, Page8.class);
+                startActivity(intent2);
+            }
+        });
 
     }
 
-    public void onCheckedTrue(){
-        if(r1.isChecked() == true){
-            Toast.makeText(this, "InCorrecto", Toast.LENGTH_LONG).show();
-        }
-    }
-
-    public void onChecked(){
-        if(r2.isChecked() == true){
-            Toast.makeText(this, "Correcto", Toast.LENGTH_LONG).show();
-        }
-    }
-    public void onChecked1(){
-        if (r3.isChecked() == true){
-            Toast.makeText(this, "InCorrecto", Toast.LENGTH_LONG).show();
+    public void operar() {
+        if (r1.isChecked() == true) {
+            pr.correcto += 1;
+        } else if (r2.isChecked() == true) {
+            pr.incorrecto += 1;
+        } else if (r3.isChecked() == true) {
+            pr.incorrecto += 1;
         }
     }
 
 
-    public void onClick2(View v){
-        if(v.getId() == R.id.button29){
-            Intent intent = new Intent(Page7.this, MainActivity.class);
-            startActivity(intent);
-        }
-    }
-    public void onClick3(View v){
-        if (v.getId() == R.id.button30){
-            Intent intent2 = new Intent(Page7.this, Page8.class);
-            startActivity(intent2);
-        }
-    }
+
 }

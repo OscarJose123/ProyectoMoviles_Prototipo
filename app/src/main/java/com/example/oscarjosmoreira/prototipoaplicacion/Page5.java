@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 public class Page5 extends AppCompatActivity {
 
+    Page1 pr = new Page1();
     private Button menu, siguiente;
     private RadioButton r1, r2, r3;
 
@@ -26,28 +27,30 @@ public class Page5 extends AppCompatActivity {
         menu = (Button) findViewById(R.id.button25);
         siguiente = (Button) findViewById(R.id.button26);
 
-        menu.setOnClickListener((View.OnClickListener) this);
-        siguiente.setOnClickListener((View.OnClickListener) this);
+        menu.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(Page5.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        siguiente.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent2 = new Intent(Page5.this, Page6.class);
+                startActivity(intent2);
+            }
+        });
 
     }
 
-    public void onCheckedTrue(){
-        if(r1.isChecked() == true){
-            Toast.makeText(this, "Correcto", Toast.LENGTH_LONG).show();
+    public void operar() {
+        if (r1.isChecked() == true) {
+            pr.correcto += 1;
+        } else if (r2.isChecked() == true) {
+            pr.incorrecto += 1;
+        } else if (r3.isChecked() == true) {
+            pr.incorrecto += 1;
         }
     }
-
-    public void onChecked(){
-        if(r2.isChecked() == true){
-            Toast.makeText(this, "InCorrecto", Toast.LENGTH_LONG).show();
-        }
-    }
-    public void onChecked1(){
-        if (r3.isChecked() == true){
-            Toast.makeText(this, "InCorrecto", Toast.LENGTH_LONG).show();
-        }
-    }
-
 
     public void onClick2(View v){
         if(v.getId() == R.id.button25){

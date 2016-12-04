@@ -18,23 +18,22 @@ public class Page14 extends AppCompatActivity {
         menu = (Button) findViewById(R.id.button43);
         siguiente = (Button) findViewById(R.id.button44);
 
-        menu.setOnClickListener((View.OnClickListener) this);
-        siguiente.setOnClickListener((View.OnClickListener) this);
+        menu.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(Page14.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        siguiente.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent2 = new Intent(Page14.this, Page15.class);
+                startActivity(intent2);
+            }
+        });
 
     }
 
-    public void onClick2(View v){
-        if(v.getId() == R.id.button43){
-            Intent intent = new Intent(Page14.this, MainActivity.class);
-            startActivity(intent);
-        }
-    }
-    public void onClick3(View v){
-        if (v.getId() == R.id.button44){
-            Intent intent2 = new Intent(Page14.this, Page15.class);
-            startActivity(intent2);
-        }
-    }
+
 
 
 }
