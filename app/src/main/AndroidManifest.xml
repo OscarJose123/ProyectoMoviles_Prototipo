@@ -3,12 +3,17 @@
     package="com.example.oscarjosmoreira.prototipoaplicacion">
 
     <application
+        android:name="com.orm.SugarApp">
         android:allowBackup="true"
         android:icon="@drawable/icono"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            <meta-data android:name="DATABASE" android:value="result.db"/>
+            <meta-data android:name="VERSION" android:value="1"/>
+            <meta-data android:name="QUERY_LOG" android:value="true"/>
+            <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.example.oscarjosemoreira.prototipoaplicacion"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,7 +53,8 @@
         <activity android:name=".Page12" />
         <activity android:name=".Page13" />
         <activity android:name=".Page14" />
-        <activity android:name=".Page15"></activity>
+        <activity android:name=".Page15" />
+
     </application>
 
 </manifest>
