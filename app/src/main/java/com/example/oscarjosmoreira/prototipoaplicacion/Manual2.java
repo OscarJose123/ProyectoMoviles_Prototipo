@@ -22,63 +22,56 @@ public class Manual2 extends AppCompatActivity {
         Button button13 = (Button) findViewById(R.id.button13);
         Button button14 = (Button) findViewById(R.id.button14);
 
-        button10.setOnClickListener((View.OnClickListener) this);
-        button9.setOnClickListener((View.OnClickListener) this);
-        button8.setOnClickListener((View.OnClickListener) this);
-        button11.setOnClickListener((View.OnClickListener) this);
-        button12.setOnClickListener((View.OnClickListener) this);
-        button13.setOnClickListener((View.OnClickListener) this);
-        button14.setOnClickListener((View.OnClickListener) this);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual2.this, curvaderecha.class);
+                startActivity(intent);
+            }
+        });
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual2.this, cedaelpaso.class);
+                startActivity(intent);
+            }
+        });
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual2.this, vminimo.class);
+                startActivity(intent);
+            }
+        });
+        button11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual2.this, noGirar.class);
+                startActivity(intent);
+            }
+        });
+        button12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual2.this, cedaelpaso.class);
+                startActivity(intent);
+            }
+        });
+        button13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual2.this, cedaelpaso.class);
+                startActivity(intent);
+            }
+        });
+        button14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual2.this, Manual3.class);
+                startActivity(intent);
+            }
+        });
 
     }
-
-    public void onClick0(View  v){
-        if (v.getId() == R.id.button10) {
-            Intent intent1 = new Intent(Manual2.this, curvaderecha.class);
-            startActivity(intent1);
-        }
-    }
-
-    public void onClick1(View  v){
-        if (v.getId() == R.id.button9) {
-            Intent intent2 = new Intent(Manual2.this, cedaelpaso.class);
-            startActivity(intent2);
-        }
-    }
-
-
-    public void onClick(View  v){
-        if (v.getId() == R.id.button8) {
-            Intent intent4 = new Intent(Manual2.this, vminimo.class);
-            startActivity(intent4);
-        }
-    }
-
-    public void onClick2(View  v){
-        if (v.getId() == R.id.button11) {
-            Intent intent5 = new Intent(Manual2.this, noGirar.class);
-            startActivity(intent5);
-        }
-    }
-    public void onClick3(View  v){
-        if (v.getId() == R.id.button12) {
-            Intent intent6 = new Intent(Manual2.this, cedaelpaso.class);
-            startActivity(intent6);
-        }
-    }
-    public void onClick4(View  v){
-        if (v.getId() == R.id.button13) {
-            Intent intent7 = new Intent(Manual2.this, pavimento.class);
-            startActivity(intent7);
-        }
-    }
-
-    public void onClick5(View v){
-        if (v.getId() == R.id.button14){
-            Intent intent8 = new Intent(Manual2.this, Manual3.class);
-            startActivity(intent8);
-        }
-    }
-
 
 }

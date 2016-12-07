@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 
 public class Page14 extends AppCompatActivity {
-
+    Page1 pr = new Page1();
     private RadioButton r1, r2, r3;
     private Button menu, siguiente;
 
@@ -39,6 +39,15 @@ public class Page14 extends AppCompatActivity {
 
     }
 
+    public void operar() {
+        if (r1.isChecked() == true) {
+            pr.incorrecto += 1;
+        } else if (r2.isChecked() == true) {
+            pr.correcto += 1;
+        } else if (r3.isChecked() == true) {
+            pr.incorrecto += 1;
+        }
+    }
 
 
 

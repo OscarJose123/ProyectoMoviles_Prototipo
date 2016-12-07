@@ -17,24 +17,21 @@ public class Manual3 extends AppCompatActivity {
         Button button15 = (Button) findViewById(R.id.button15);
         Button button16 = (Button) findViewById(R.id.button16);
 
-        button15.setOnClickListener((View.OnClickListener) this);
-        button16.setOnClickListener((View.OnClickListener) this);
+        button15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual3.this, peatones.class);
+                startActivity(intent);
+            }
+        });
+        button16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual3.this, pcostado.class);
+                startActivity(intent);
+            }
+        });
 
-
-    }
-
-    public void onClick6 (View v){
-        if (v.getId() == R.id.button15){
-            Intent intent9 = new Intent(Manual3.this, peatones.class);
-            startActivity(intent9);
-        }
-    }
-
-    public void onClick10 (View v){
-        if (v.getId() == R.id.button16){
-            Intent intent10 = new Intent(Manual3.this, pcostado.class);
-            startActivity(intent10);
-        }
 
     }
 
