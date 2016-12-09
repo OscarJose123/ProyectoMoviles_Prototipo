@@ -34,6 +34,7 @@ public class Page8 extends AppCompatActivity {
         });
         siguiente.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                operar();
                 Intent intent2 = new Intent(Page8.this, Page99.class);
                 startActivity(intent2);
             }

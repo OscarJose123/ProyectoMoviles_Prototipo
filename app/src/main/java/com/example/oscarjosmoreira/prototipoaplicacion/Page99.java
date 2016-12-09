@@ -32,6 +32,7 @@ Page1 pr = new Page1();
         });
         siguiente.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                operar();
                 Intent intent2 = new Intent(Page99.this, Page10.class);
                 startActivity(intent2);
             }

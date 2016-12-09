@@ -35,6 +35,7 @@ public class Page5 extends AppCompatActivity {
         });
         siguiente.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                operar();
                 Intent intent2 = new Intent(Page5.this, Page6.class);
                 startActivity(intent2);
             }
@@ -52,17 +53,6 @@ public class Page5 extends AppCompatActivity {
         }
     }
 
-    public void onClick2(View v){
-        if(v.getId() == R.id.button25){
-            Intent intent = new Intent(Page5.this, MainActivity.class);
-            startActivity(intent);
-        }
-    }
-    public void onClick3(View v){
-        if (v.getId() == R.id.button26){
-            Intent intent2 = new Intent(Page5.this, Page6.class);
-            startActivity(intent2);
-        }
-    }
+
 
 }
