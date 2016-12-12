@@ -25,8 +25,20 @@ public class Page13 extends AppCompatActivity {
         menu = (Button) findViewById(R.id.button41);
         siguiente = (Button) findViewById(R.id.button42);
 
-        menu.setOnClickListener((View.OnClickListener) this);
-        siguiente.setOnClickListener((View.OnClickListener) this);
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Page13.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        siguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(Page13.this, Page14.class);
+                startActivity(intent2);
+            }
+        });
     }
 
     public void onCheckedTrue(){
@@ -43,19 +55,6 @@ public class Page13 extends AppCompatActivity {
     public void onChecked1(){
         if (r3.isChecked() == true){
             Toast.makeText(this, "Correcto", Toast.LENGTH_LONG).show();
-        }
-    }
-
-    public void onClick2(View v){
-        if(v.getId() == R.id.button41){
-            Intent intent = new Intent(Page13.this, MainActivity.class);
-            startActivity(intent);
-        }
-    }
-    public void onClick3(View v){
-        if (v.getId() == R.id.button42){
-            Intent intent2 = new Intent(Page13.this, Page14.class);
-            startActivity(intent2);
         }
     }
 }

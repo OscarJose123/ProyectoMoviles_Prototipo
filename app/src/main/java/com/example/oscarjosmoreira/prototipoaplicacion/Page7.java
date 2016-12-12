@@ -27,8 +27,20 @@ public class Page7 extends AppCompatActivity {
         menu = (Button) findViewById(R.id.button29);
         siguiente = (Button) findViewById(R.id.button30);
 
-        menu.setOnClickListener((View.OnClickListener) this);
-        siguiente.setOnClickListener((View.OnClickListener) this);
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Page7.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        siguiente.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(Page7.this, Page8.class);
+                startActivity(intent2);
+            }
+        });
 
     }
 
@@ -49,17 +61,4 @@ public class Page7 extends AppCompatActivity {
         }
     }
 
-
-    public void onClick2(View v){
-        if(v.getId() == R.id.button29){
-            Intent intent = new Intent(Page7.this, MainActivity.class);
-            startActivity(intent);
-        }
-    }
-    public void onClick3(View v){
-        if (v.getId() == R.id.button30){
-            Intent intent2 = new Intent(Page7.this, Page8.class);
-            startActivity(intent2);
-        }
-    }
 }

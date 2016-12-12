@@ -26,40 +26,20 @@ public class Page11 extends AppCompatActivity {
         menu = (Button) findViewById(R.id.button37);
         siguiente = (Button) findViewById(R.id.button38);
 
-        menu.setOnClickListener((View.OnClickListener) this);
-        siguiente.setOnClickListener((View.OnClickListener) this);
+        menu.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Page11.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        siguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(Page11.this, Page12.class);
+                startActivity(intent2);
+            }
+        });
 
     }
-
-    public void onCheckedTrue(){
-        if(r1.isChecked() == true){
-            Toast.makeText(this, "Correcto", Toast.LENGTH_LONG).show();
-        }
-    }
-
-    public void onChecked(){
-        if(r2.isChecked() == true){
-            Toast.makeText(this, "InCorrecto", Toast.LENGTH_LONG).show();
-        }
-    }
-    public void onChecked1(){
-        if (r3.isChecked() == true){
-            Toast.makeText(this, "InCorrecto", Toast.LENGTH_LONG).show();
-        }
-    }
-
-
-    public void onClick2(View v){
-        if(v.getId() == R.id.button37){
-            Intent intent = new Intent(Page11.this, MainActivity.class);
-            startActivity(intent);
-        }
-    }
-    public void onClick3(View v){
-        if (v.getId() == R.id.button38){
-            Intent intent2 = new Intent(Page11.this, Page12.class);
-            startActivity(intent2);
-        }
-    }
-
 }

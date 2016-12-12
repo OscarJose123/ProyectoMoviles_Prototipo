@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class Page3 extends AppCompatActivity {
 
-
+    Page1 pr =  new Page1();
     private Button menu, siguiente;
     private RadioButton r1, r2, r3;
 

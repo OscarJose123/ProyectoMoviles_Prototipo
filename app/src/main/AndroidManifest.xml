@@ -48,7 +48,9 @@
         <activity android:name=".Page12" />
         <activity android:name=".Page13" />
         <activity android:name=".Page14" />
-        <activity android:name=".Page15"></activity>
+        <activity android:name=".Page15" />
+        <activity android:name=".login" />
+        <activity android:name=".Registro"></activity>
     </application>
 
 </manifest>

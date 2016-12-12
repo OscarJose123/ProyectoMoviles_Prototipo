@@ -22,60 +22,56 @@ public class Manual extends AppCompatActivity {
         Button button6 = (Button) findViewById(R.id.button6);
         Button button7 = (Button) findViewById(R.id.button7);
 
-        button6.setOnClickListener((View.OnClickListener) this);
-        button5.setOnClickListener((View.OnClickListener) this);
-        button4.setOnClickListener((View.OnClickListener) this);
-        button3.setOnClickListener((View.OnClickListener) this);
-        button2.setOnClickListener((View.OnClickListener) this);
-        button.setOnClickListener((View.OnClickListener) this);
-        button7.setOnClickListener((View.OnClickListener) this);
+        button6.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent6 = new Intent(Manual.this, vmaxima.class);
+                startActivity(intent6);
+            }
+        });
+        button5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent5 = new Intent(Manual.this, dobleSentido.class);
+                startActivity(intent5);
+            }
+        });
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent4 = new Intent(Manual.this, estacionar.class);
+                startActivity(intent4);
+            }
+        });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(Manual.this, circulacion.class);
+                startActivity(intent3);
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(Manual.this, aventajar.class);
+                startActivity(intent2);
+            }
+        });
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Manual.this, Alto.class);
+                startActivity(intent);
+            }
+        });
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent7 = new Intent(Manual.this, Manual2.class);
+                startActivity(intent7);
+            }
+        });
 
     }
-    public void onClick(View  v){
-        if (v.getId() == R.id.button7) {
-            Intent intent7 = new Intent(Manual.this, Manual2.class);
-            startActivity(intent7);
-        }
-    }
-
-    public void onClick1(View  v){
-        if (v.getId() == R.id.button) {
-            Intent intent = new Intent(Manual.this, Alto.class);
-            startActivity(intent);
-        }
-    }
-    public void onClick2(View  v){
-        if (v.getId() == R.id.button2) {
-            Intent intent2 = new Intent(Manual.this, aventajar.class);
-            startActivity(intent2);
-        }
-    }
-    public void onClick3(View  v){
-        if (v.getId() == R.id.button3) {
-            Intent intent3 = new Intent(this, circulacion.class);
-            startActivity(intent3);
-        }
-    }
-    public void onClick4(View v){
-        if (v.getId() == R.id.button4){
-            Intent intent4 = new Intent(Manual.this, estacionar.class);
-            startActivity(intent4);
-        }
-    }
-    public void onClick5(View  v){
-        if (v.getId() == R.id.button5) {
-            Intent intent5 = new Intent(Manual.this, dobleSentido.class);
-            startActivity(intent5);
-        }
-    }
-    public void onClick6(View  v){
-        if (v.getId() == R.id.button6) {
-            Intent intent6 = new Intent(Manual.this, vmaxima.class);
-            startActivity(intent6);
-        }
-    }
-
-
-
 
 }

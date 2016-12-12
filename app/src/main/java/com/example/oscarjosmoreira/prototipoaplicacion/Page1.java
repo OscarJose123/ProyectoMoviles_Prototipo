@@ -11,9 +11,11 @@ import android.widget.Toast;
 
 public class Page1 extends AppCompatActivity {
 
-
+    public int correctas;
+    public int incorrectas;
     private Button menu, siguiente;
     private RadioButton r1, r2, r3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,30 +26,25 @@ public class Page1 extends AppCompatActivity {
         r2 = (RadioButton) findViewById(R.id.radioButton2);
         r3 = (RadioButton) findViewById(R.id.radioButton3);
 
+
         menu = (Button) findViewById(R.id.button19);
         siguiente = (Button) findViewById(R.id.button20);
 
         menu.setOnClickListener((View.OnClickListener) this);
         siguiente.setOnClickListener((View.OnClickListener) this);
-
     }
-        public void onCheckedTrue(){
-            if(r1.isChecked() == true){
-                Toast.makeText(this, "Correcto", Toast.LENGTH_LONG).show();
-            }
-        }
 
-        public void onChecked(){
-            if(r2.isChecked() == true){
-                Toast.makeText(this, "InCorrecto", Toast.LENGTH_LONG).show();
-            }
+    public void operar() {
+        if (r1.isChecked()==true) {
+            correctas+=1;
+        } else
+        if (r2.isChecked()==true) {
+            incorrectas+=1;
+        } else
+        if (r3.isChecked()==true){
+            incorrectas+=1;
         }
-        public void onChecked1(){
-            if (r3.isChecked() == true){
-                Toast.makeText(this, "InCorrecto", Toast.LENGTH_LONG).show();
-            }
-        }
-
+    }
 
         public void onClick2(View v){
             if(v.getId() == R.id.button19){
@@ -57,9 +54,9 @@ public class Page1 extends AppCompatActivity {
         }
         public void onClick3(View v){
             if (v.getId() == R.id.button20){
+                this.operar();
                 Intent intent2 = new Intent(Page1.this, Page2.class);
                 startActivity(intent2);
             }
-        }
-
+               }
 }

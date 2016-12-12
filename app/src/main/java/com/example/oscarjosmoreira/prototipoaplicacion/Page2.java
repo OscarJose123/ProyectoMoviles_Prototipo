@@ -8,10 +8,13 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+
 public class Page2 extends AppCompatActivity {
 
     private Button menu, siguiente;
     private RadioButton r1, r2, r3;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,22 +32,15 @@ public class Page2 extends AppCompatActivity {
         siguiente.setOnClickListener((View.OnClickListener) this);
     }
 
-    public void onCheckedTrue(){
-        if(r1.isChecked() == true){
-            Toast.makeText(this, "Correcto", Toast.LENGTH_LONG).show();
+    public void operar() {
+        if (r1.isChecked()==true) {
+            Toast.makeText(this, "Correcto",Toast.LENGTH_LONG).show();
+        } else
+        if (r2.isChecked()==true && r3.isChecked()==true) {
+           Toast.makeText(this, "Incorrecto", Toast.LENGTH_LONG).show();
         }
     }
 
-    public void onChecked(){
-        if(r2.isChecked() == true){
-            Toast.makeText(this, "InCorrecto", Toast.LENGTH_LONG).show();
-        }
-    }
-    public void onChecked1(){
-        if (r3.isChecked() == true){
-            Toast.makeText(this, "InCorrecto", Toast.LENGTH_LONG).show();
-        }
-    }
 
 
     public void onClick2(View v){
@@ -55,6 +51,7 @@ public class Page2 extends AppCompatActivity {
     }
     public void onClick3(View v){
         if (v.getId() == R.id.button22){
+            this.operar();
             Intent intent2 = new Intent(Page2.this, Page3.class);
             startActivity(intent2);
         }

@@ -20,4 +20,13 @@
         android:id="@+id/textView50"
         android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:id="@+id/button50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp" />
+
 </RelativeLayout>
